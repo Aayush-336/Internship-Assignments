@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto mt-4">
+                <div class="d-flex justify-content-center align-items-center sidebar-top-item mb-4">
+                    <i class=" icon icon-toggle collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".toggle-elements" aria-expanded="false" aria-controls="toggle-elements"
+                        id="toggle-button">
+                    </i>
+                    <div class="collapse toggle-elements sidebar-company-logo ms-4" id="company-logo"><img
+                            src="assets/header-logo.svg" class="company-logo-img "></div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center sidebar-item item-selected">
+                    <i class="icon icon-dashboard icon-dashboard-active item-selected "></i>
+                    <div class="collapse toggle-elements sidebar-text" id="dashboard-text"><span
+                            class="sidebar-text-span item-selected">Dashboard</span></div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center sidebar-item mt-3"
+                    onclick="window.location.href = '/analysis.html'">
+                    <i class="icon icon-analysis"></i>
+                    <div class="collapse toggle-elements sidebar-text" id="analysis-text"><span
+                            class="sidebar-text-span">Analysis</span></div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center sidebar-item mt-3">
+                    <i class="icon icon-inbox"></i>
+                    <div class="collapse toggle-elements sidebar-text" id="inbox-text"><span
+                            class="sidebar-text-span">Inbox</span></div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center sidebar-item mt-3">
+                    <i class="icon icon-history"></i>
+                    <div class="collapse toggle-elements sidebar-text" id="history-text"><span
+                            class="sidebar-text-span">History</span></div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center sidebar-item mt-3">
+                    <i class="icon icon-users"></i>
+                    <div class="collapse toggle-elements sidebar-text" id="users-text"><span
+                            class="sidebar-text-span">Users</span></div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center sidebar-item mt-3">
+                    <i class="icon icon-maintenance"></i>
+                    <div class="collapse toggle-elements sidebar-text" id="maintenance-text"><span
+                            class="sidebar-text-span">Maintenance</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center sidebar-item mt-3">
+                    <i class="icon icon-setting"></i>
+                    <div class="collapse toggle-elements sidebar-text" id="setting-text"><span
+                            class="sidebar-text-span">Setting</span></div>
+                </div>
+            </div>
+            <div class="col mt-4">
+                <div class="row">
+                    <div class="row height d-flex justify-content-start align-items-center">
+
+                        <div class="col-6">
+                            <div class="search d-flex align-items-center ms-3">
+                                <i class="icon icon-search"></i>
+                                <input type="text" class="form-control ms-2" placeholder="Search"
+                                    id="search-text-input">
+                            </div>
+                        </div>
+                        <div class="col-auto d-flex justify-content-end ms-auto">
+                            <i class="header-icon icon-notification"></i>
+                        </div>
+                        <div class="col-auto d-flex justify-content-end align-items-center">
+                            <img src="assets/profile.png" class="header-icon icon-profile  ms-2"></img>
+                            <span class="profile-name ms-2">John Doe</span>
+                            <i class="header-icon icon-dropdown"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mt-4">
+
+                    <div class="main-container">
+                        <h2>Dashboard</h2>
+                        <div class="row dashboard-row">
+                            <div class="col dashboard-items-div">
+                                <div class="row mx-0 my-2">
+
+                                    <div class="d-flex w-auto dashboard-item">
+
+                                        <div class="item-image-div w-auto pe-0">
+                                            <img src="images/items/star.svg" class="item-image">
+                                        </div>
+                                        <div class="item-data w-auto">
+                                            <div class="item-number-div">
+                                                <p class="item-number">23,456</p>
+                                            </div>
+                                            <div class="item-text-div">
+                                                <p class="item-text">New Products</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col dashboard-items-div">
+                                <div class="row mx-0 my-2">
+
+                                    <div class="d-flex w-auto dashboard-item">
+                                        <div class="item-image-div w-auto pe-0 flex-shrink-0">
+                                            <img src="images/items/new-product.svg" class="item-image">
+                                        </div>
+                                        <div class="item-data w-auto">
+
+                                            <div class="item-number-div">
+                                                <p class="item-number">2345</p>
+                                            </div>
+                                            <div class="item-text-div">
+                                                <p class="item-text">Added Products</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col dashboard-items-div">
+                                <div class="row mx-0 my-2">
+
+                                    <div class="d-flex w-auto dashboard-item ">
+                                        <div class="item-image-div w-auto pe-0">
+                                            <img src="images/items/total-product.svg" class="item-image">
+                                        </div>
+                                        <div class="item-data w-auto">
+
+                                            <div class="item-number-div">
+                                                <p class="item-number">32,456</p>
+                                            </div>
+                                            <div class="item-text-div">
+                                                <p class="item-text">Total Products</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col dashboard-items-div">
+                                <div class="row mx-0 my-2">
+                                    <div class="d-flex w-auto dashboard-item">
+                                        <div class="item-image-div w-auto pe-0">
+                                            <img src="images/items/dollar-filled.svg" class="item-image">
+                                        </div>
+                                        <div class="item-data w-auto">
+
+                                            <div class="item-number-div">
+                                                <p class="item-number">5678</p>
+                                            </div>
+                                            <div class="item-text-div">
+                                                <p class="item-text">Today's Sale</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col dashboard-items-div">
+                                <div class="row mx-0 my-2">
+
+                                    <div class="d-flex w-auto dashboard-item">
+                                        <div class="item-image-div w-auto pe-0">
+                                            <img src="images/items/money-bag.svg" class="item-image">
+                                        </div>
+                                        <div class="item-data w-auto">
+
+                                            <div class="item-number-div">
+                                                <p class="item-number">33,5342</p>
+                                            </div>
+                                            <div class="item-text-div">
+                                                <p class="item-text">Total Sale</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="row mt-5 mb-5">
+                            <div class="col me-5">
+                                <div class="sale-image-div bg-white p-3">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <h3 class="">Sale</h3>
+                                        <div class="d-flex w-100 justify-content-end align-items-start">
+                                            <span class="sale-image-type pb-2"
+                                                onclick="changeSaleImageTypeSelection(this)">Weekly</span><span
+                                                class="sale-image-type pb-2"
+                                                onclick="changeSaleImageTypeSelection(this)">Monthly</span><span
+                                                class="sale-image-type sale-image-type-selected pb-2"
+                                                onclick="changeSaleImageTypeSelection(this)">Yearly</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <img src="images/data-graph.png" class="sale-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col bg-white me-2 p-3">
+                                <div class="row">
+                                    <h3>Sales By Country</h3>
+                                    <img src="images/pie-chart.svg" class="sale-chart">
+                                </div>
+                                <div class="row row-cols-auto">
+                                    <div class="col col-6 bullets">
+                                        <div class="circle" id="chart-item-1"></div>
+                                        <p class="circle-text">United States of America</p>
+                                    </div>
+                                    <div class="col col-6 bullets">
+                                        <div class="circle" id="chart-item-2">
+                                        </div>
+                                        <p class="circle-text">Canada</p>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col col-6 bullets">
+                                        <div class="circle" id="chart-item-3">
+                                        </div>
+                                        <p class="circle-text">Russia</p>
+                                    </div>
+                                    <div class="col col-6 bullets">
+                                        <div class="circle" id="chart-item-4">
+                                        </div>
+                                        <p class="circle-text">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <h3 id="inovices-label" class=" w-auto">Invoices</h3>
+                            <div id="view-all-but-div" class="w-auto">
+                                <button id="view-all-but" class="button w-auto">View All</button>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                            <div class="table-responsive bg-white">
+
+                                <table class="table mx-0 mt-3">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <p class="headers">INVOICE</p>
+                                            </th>
+                                            <th>
+                                                <p class="headers">COMPANY NAME</p>
+                                            </th>
+                                            <th>
+                                                <p class="headers">EMAIL</p>
+                                            </th>
+                                            <th>
+                                                <p class="headers">DUE DATE</p>
+                                            </th>
+                                            <th>
+                                                <p class="headers">STATUS</p>
+                                            </th>
+                                            <th>
+                                                <p class="headers">AMOUNT</p>
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">651535</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Public Adjusting Firm</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">georgia.young@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">24 May, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-successful">Paid</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$47,800</p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">558612</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Other</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">jessica.hanson@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">24 May, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-successful">Paid</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$98,000</p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">558612</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Vendor</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">alma.lawson@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">8 Sep, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-successful">Paid</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$20,900</p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">558612</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Property Management Company</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">kenzi.lawson@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">22 Oct, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-successful">Paid</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$10,570</p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">651535</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Subcontractor Company</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">jackson.graham@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">1 Feb, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-failed">Failed</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$10,200</p>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">653518</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Mortgage Company</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">felicia.reid@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">22 Oct, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-pending">Pending</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$12,600</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">487441</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">TPA</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">dolores.chambers@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">21 Sep, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-successful">Paid</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$11,170</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">267400</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Fire Department</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">nevaeh.simmons@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">17 Oct, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-failed">Failed</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$28,000</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="invoice-item data">449003</p>
+                                            </td>
+                                            <td>
+                                                <p class="company-item data">Insurance Carrier</p>
+                                            </td>
+                                            <td>
+                                                <p class="email-item data">curtis.weaver@example.com</p>
+                                            </td>
+                                            <td>
+                                                <p class="due-date-item data">21 Sep, 2020</p>
+                                            </td>
+                                            <td>
+                                                <p class="status-item data status-successful">Paid</p>
+                                            </td>
+                                            <td>
+                                                <p class="amount-item data">$10,000</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+
+        function changeSaleImageTypeSelection(newSelection) {
+            $('.sale-image-type').removeClass("sale-image-type-selected")
+            newSelection.classList.add("sale-image-type-selected")
+        }
+
+        $("#toggle-button").on('click', function () {
+            toggleState = !toggleState
+        })
+        let toggleState = true
+        checkAndCollapseSideBar(toggleState)
+        function checkAndCollapseSideBar(collapsed) {
+            if ($(window).width() > 960 & collapsed) {
+                $('#toggle-button').click()
+            }
+            if ($(window).width() < 960 & !collapsed) {
+                $('#toggle-button').click()
+            }
+        }
+        $(window).resize(function () {
+            checkAndCollapseSideBar(toggleState)
+        }
+        );
+    </script>
+</body>
+
+</html>
